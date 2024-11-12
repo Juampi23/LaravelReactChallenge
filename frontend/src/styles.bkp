@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.App {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-form form {
+    padding: 0 10px;
+}
+
+input, button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.hide-details {
+    background-color: #007BFF; /* Blue color for Hide Details button */
+}
+
+button.hide-details:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+button.delete-patient {
+    background-color: #f44336; /* Red color for Delete button */
+}
+
+button.delete-patient:hover {
+    background-color: #d32f2f; /* Darker red for hover effect */
+}
+
+.success-box {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: #e0f7e9;
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.field-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .field-error.show {
+    opacity: 1;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+.patient-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patient-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.patient-list {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-right: 10px;
+}
+
+.patient-list.scroll-enabled {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #888;
+}
